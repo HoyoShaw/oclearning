@@ -26,7 +26,6 @@
 // 标签也是方法名的一部分
 - (int)sendMesageWithNumber:(int)number andContent:(char *)content;
 
-
 + (void)about;
 
 @end
