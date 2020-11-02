@@ -20,6 +20,14 @@
     return self;
 }
 
+- (instancetype)initWithAge:(int)age andNo:(int)no{
+    if (self = [super initWithAge:age]) {
+//        self.age = age; 父类属性交给父类方法处理，子类方法处理自己独有的属性
+        self.no = no;
+    }
+    return self;
+}
+
 - (void)eat {
     [super eat];
     NSLog(@"Student eat.");

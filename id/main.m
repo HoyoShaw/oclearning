@@ -20,8 +20,14 @@ int main(int argc, const char * argv[]) {
     
     [t eat];
     [t printNo];
-    BOOL res = [p isKindOfClass:[Person class]];
-    BOOL res1 = [s isMemberOfClass:[Student class]];
+    
+    Student *s1 = [[Student alloc] initWithAge:5 andNo:20];
+    [s1 printNo];
+    
+    
+    // 类工厂
+    Person *person = [Person personWithAge:7];
+    NSLog(@"person age = %i",person.age);
     
     return 0;
 }

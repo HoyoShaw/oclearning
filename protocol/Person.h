@@ -1,22 +1,22 @@
 //
 //  Person.h
-//  id
+//  protocol
 //
-//  Created by xiaohongyao on 28/10/2020.
+//  Created by xiaohongyao on 2/11/2020.
 //  Copyright © 2020 xiaohongyao. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "Wife.h"
+#import "WifiCondition.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Person : NSObject
 
-@property int age;
+@property (nonatomic,strong) Wife<WifeCondition> *wife;
 
-+ (instancetype)personWithAge:(int)age;
-- (instancetype)initWithAge:(int)age;
-- (void)eat;
+-(void)show;
 
 @end
 

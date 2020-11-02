@@ -1,21 +1,18 @@
 //
-//  Student.h
-//  id
+//  Car.h
+//  SEL
 //
 //  Created by xiaohongyao on 28/10/2020.
 //  Copyright © 2020 xiaohongyao. All rights reserved.
 //
 
-#import "Person.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Student : Person
+@interface Car : NSObject
 
-@property int no;
-
-- (instancetype)initWithAge:(int)age andNo:(int)no;
-- (void) printNo;
+- (void)run;
 
 @end
 
